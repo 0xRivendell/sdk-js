@@ -16,7 +16,7 @@ class Intents {
 	}
 
 	public getTransaction = async (chainId: string, command: string, signer: string) => {
-		const res = await fetch(this.apiUrl, {
+		const res = await fetch(`${this.apiUrl}/payments`, {
 			body: JSON.stringify({
 				chainId, command, recipient: signer
 			}),
