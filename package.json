@@ -17,7 +17,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "dev": "ts-node test/api.test.ts"
   },
   "peerDependencies": {},
   "husky": {
@@ -48,6 +49,7 @@
     "@size-limit/preset-small-lib": "^8.2.6",
     "husky": "^8.0.3",
     "size-limit": "^8.2.6",
+    "ts-node": "^10.9.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.1",
     "typescript": "^5.1.6"
