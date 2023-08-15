@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -53,5 +53,7 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.6.1",
     "typescript": "^5.1.6"
-  }
+  },
+  "description": "Intents-SDK by Bytekode Labs",
+  "repository": "https://github.com/Bytekode-Labs/intents-sdk.git"
 }
