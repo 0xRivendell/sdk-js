@@ -32,7 +32,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "intents",
+  "name": "@bytekode/intents",
   "author": "Shlok D. Mange",
   "module": "dist/intents.esm.js",
   "size-limit": [
