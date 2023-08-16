@@ -1,5 +1,5 @@
 {
-  "version": "0.1.2",
+  "version": "0.1.3",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -55,5 +55,16 @@
     "typescript": "^5.1.6"
   },
   "description": "Intents-SDK by Bytekode Labs",
-  "repository": "https://github.com/Bytekode-Labs/intents-sdk.git"
+  "repository": "https://github.com/Bytekode-Labs/intents-sdk.git",
+  "keywords": [
+    "intents",
+    "intents-sdk",
+    "bytekode",
+    "bytekode-labs",
+    "web3",
+    "ethereum",
+    "ethers",
+    "smart accounts",
+    "smart contract wallets"
+  ]
 }
