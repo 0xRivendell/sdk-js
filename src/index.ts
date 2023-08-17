@@ -5,7 +5,7 @@ class Intents {
 
 	constructor(apiKey: string) {
 		this.apiKey = apiKey
-		this.apiUrl = 'https://intents-api.bytekode.xyz'
+		this.apiUrl = 'https://intents-api.onrender.com'
 	}
 
 	public getTransaction = async (chainId: string, command: string, signer: string) => {

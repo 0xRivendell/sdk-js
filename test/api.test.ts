@@ -2,11 +2,11 @@ const { Intents } = require('../dist/index.js')
 
 const intents = new Intents('test-api-key')
 
-let command = 'I want to send 10 usdc to vitalik.eth'
-let signer = `0x03f142529a7B70305C07a50fAA44f6EBDADB4624`
+let command = 'Transfer 0.001 eth to shlok28.eth'
+let signer = `0x7e8eb4FbA4e412d39d95618Ad6d735495baf6e9a`
 
 const main = async () => {
-    const res = await intents.getTransaction('1', command, signer)
+    const res = await intents.getTransaction('80001', command, signer)
     console.log(res)
 }
 
