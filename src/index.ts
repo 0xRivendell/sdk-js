@@ -1,3 +1,5 @@
+import { ISwap } from './interfaces'
+
 class Intents {
 	
 	private apiKey: string
@@ -23,7 +25,7 @@ class Intents {
 		return json
 	}
 
-	public swap = async (chainId: string, fromToken: string, toToken: string, amount: string, from: string) => {
+	public swap = async (swapObject: ISwap) => {
 
 	}
 
@@ -31,6 +33,7 @@ class Intents {
 
 	}
 
+	
 }
 
 export { Intents }
