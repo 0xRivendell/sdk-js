@@ -13,7 +13,7 @@ pnpm install @rivendell/defi
 
 2. Import & Initialize the Intents class in your node.js file
 ```
-import { Riv } from '@bytekode/intents'
+import { Riv } from '@rivendell/defi'
 
 const riv = new Riv('test-api-key')
 ```

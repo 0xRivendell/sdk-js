@@ -1,4 +1,4 @@
-import { IStake, ISwap } from './interfaces'
+import { IStake } from './interfaces'
 
 class Riv {
 	
@@ -7,6 +7,7 @@ class Riv {
 
 	constructor(apiKey: string) {
 		this.apiKey = apiKey
+		console.log(this.apiKey)
 		this.apiUrl = 'https://rivendell-api.onrender.com'
 	}
 
