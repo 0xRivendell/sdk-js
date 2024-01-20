@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -54,14 +54,18 @@
     "tslib": "^2.6.1",
     "typescript": "^5.1.6"
   },
-  "description": "Intents-SDK by Bytekode Labs",
-  "repository": "https://github.com/Bytekode-Labs/intents-sdk.git",
+  "description": "DeFi Building Blocks - powered by Rivendell",
+  "repository": "https://github.com/0xRivendell/sdk-js",
   "keywords": [
     "intents",
     "intents-sdk",
     "bytekode",
     "bytekode-labs",
     "web3",
+    "rivendell",
+    "defi",
+    "automation",
+    "0xrivendell",
     "ethereum",
     "ethers",
     "smart accounts",
