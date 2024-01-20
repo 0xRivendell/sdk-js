@@ -1,4 +1,4 @@
-import { ISwap } from './interfaces'
+import { IStake, ISwap } from './interfaces'
 
 class Intents {
 	
@@ -33,6 +33,15 @@ class Intents {
 
 	}
 
+	public stake = async ({ chainId, amount }: IStake) => {
+		const res = await fetch(`${this.apiUrl}/stake`, {
+			body: JSON.stringify({ chainId, amount }),
+			headers: { 'Content-Type': 'application/json' },
+			method: 'POST',
+		})
+		const json = await res.json()
+		return json
+	}
 	
 }
 
