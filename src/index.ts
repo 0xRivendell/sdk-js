@@ -1,6 +1,6 @@
 import { IStake, ISwap } from './interfaces'
 
-class Intents {
+class Riv {
 	
 	private apiKey: string
 	public apiUrl: string
@@ -45,4 +45,4 @@ class Intents {
 	
 }
 
-export { Intents, IStake }
+export { Riv, IStake }

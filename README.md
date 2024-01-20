@@ -8,22 +8,35 @@ Follow the below steps:
 1. Install the sdk via npm/yarn/pnpm
 
 ```
-pnpm install @bytekode/intents
+pnpm install @rivendell/defi
 ```
 
 2. Import & Initialize the Intents class in your node.js file
 ```
-import { Intents } from '@bytekode/intents'
+import { Riv } from '@bytekode/intents'
 
-const intents = new Intents('test-api-key')
+const riv = new Riv('test-api-key')
 ```
 
-3. Pass in the following parameters, to receive a transaction object
+3. To enable staking in your dapp, past the below code
 
 ```
-<!-- command: `I want to send 10 usdc to shlok28.eth` -->
-const txObject = await intents.getTransaction(chainId, command, address_of_signer)
+const stakeTx = await riv.stake({ chainId, amount })
 ```
-We support all evm based chains.
 
-*We're still in beta. For any queries/integrations, reach out to me: shlok@bytekode.xyz*
+This stakeTx contains the following:
+
+```
+{
+    to: "",
+    value: "",
+    data: "calldata of the ethereum transaction"
+}
+```
+
+The above transaction object can be signed by eoa's, aa's, etc 
+to execute staking eth via lido.
+
+We support all evm based chains (kinda sorta)
+
+*We're still in beta. For any queries/integrations, reach out to me: shlok@0xrivendell.xyz*
