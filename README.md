@@ -1,7 +1,6 @@
-## Intents - Bytekode Labs
+## Rivendell - DeFI on Steroids.
 
-Enable intents on your dapp/smart contract wallet/eoa with this
-easy to use sdk.
+Supercharge your dapp with defi in < 5 lines of code.
 
 Follow the below steps:
 
