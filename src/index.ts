@@ -1,4 +1,4 @@
-import { IStake } from './interfaces'
+import { IBridge, IStake } from './interfaces'
 
 class Riv {
 	
@@ -44,6 +44,15 @@ class Riv {
 		return json
 	}
 	
+	public bridge = async ({ from, fromChainId, toChainId, token, amount }: IBridge) => {
+		const res = await fetch(`${this.apiUrl}/bridge`, {
+			body: JSON.stringify({ from, fromChainId, toChainId, token, amount }),
+			headers: { 'Content-Type': 'application/json' },
+			method: 'POST',
+		})
+		const json = await res.json()
+		return json
+	}
 }
 
 export { Riv, IStake }
