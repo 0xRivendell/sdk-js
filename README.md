@@ -17,7 +17,7 @@ import { Riv } from '@rivendell/defi'
 const riv = new Riv('test-api-key')
 ```
 
-3. To enable staking in your dapp, past the below code
+3. To enable staking in your dapp, copy and paste the code snippet below
 
 ```
 const stakeTx = await riv.stake({ chainId, amount })
@@ -31,6 +31,11 @@ This stakeTx contains the following:
     value: "",
     data: "calldata of the ethereum transaction"
 }
+```
+4. To enable erc20 transfers in your dapp, copy and paste the code snippet below
+
+```
+const transferTx = await riv.transferTokens({ chainId, amount, token, to })
 ```
 
 The above transaction object can be signed by eoa's, aa's, etc 
