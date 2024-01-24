@@ -1,4 +1,4 @@
-import { IBridge, IStake } from './interfaces'
+import { IBridge, IStake, ITransferERC20 } from './interfaces'
 
 class Riv {
 	
@@ -53,6 +53,16 @@ class Riv {
 		const json = await res.json()
 		return json
 	}
+
+	public transferTokens = async ({ chainId, amount, to, token }: ITransferERC20) => {
+		const res = await fetch(`${this.apiUrl}/erc20`, {
+			body: JSON.stringify({ chainId, amount, to, token }),
+			headers: { 'Content-Type': 'application/json' },
+			method: 'POST',
+		})
+		const json = await res.json()
+		return json
+	}
 }
 
-export { Riv, IStake }
+export { Riv, IStake, ITransferERC20 }
